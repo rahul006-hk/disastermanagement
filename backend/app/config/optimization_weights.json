@@ -1,0 +1,14 @@
+{
+  "weights": {
+    "critical_needs_coverage": 100.0,
+    "population_served": 10.0,
+    "unmet_demand_penalty": -50.0,
+    "travel_time_penalty": -2.0,
+    "travel_distance_penalty": -1.0,
+    "resource_wastage_penalty": -5.0
+  },
+  "constraints": {
+    "max_vehicle_distance_km": 150.0,
+    "min_critical_item_fulfillment_percent": 60.0
+  }
+}

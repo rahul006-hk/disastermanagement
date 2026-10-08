@@ -1,0 +1,71 @@
+{
+  "zones": [
+    {"id": "Z1", "name": "North District Zone 1", "lat": 13.0827, "lng": 80.2707, "population": 12000, "severity": "High", "critical_needs": {"food": 500, "water": 1000, "medicine": 200, "medical_supplies": 150, "shelter_kits": 100}},
+    {"id": "Z2", "name": "East Coastal Zone 2", "lat": 13.0850, "lng": 80.2850, "population": 8500, "severity": "Critical", "critical_needs": {"food": 800, "water": 1500, "medicine": 350, "medical_supplies": 250, "shelter_kits": 200}},
+    {"id": "Z3", "name": "Central Urban Zone 3", "lat": 13.0700, "lng": 80.2600, "population": 15000, "severity": "Medium", "critical_needs": {"food": 400, "water": 800, "medicine": 100, "medical_supplies": 100, "shelter_kits": 50}},
+    {"id": "Z4", "name": "South Riverside Zone 4", "lat": 13.0500, "lng": 80.2500, "population": 9200, "severity": "Critical", "critical_needs": {"food": 900, "water": 1800, "medicine": 400, "medical_supplies": 300, "shelter_kits": 250}},
+    {"id": "Z5", "name": "West Industrial Zone 5", "lat": 13.0600, "lng": 80.2200, "population": 6000, "severity": "Low", "critical_needs": {"food": 200, "water": 400, "medicine": 50, "medical_supplies": 50, "shelter_kits": 20}},
+    {"id": "Z6", "name": "North-West Hills Zone 6", "lat": 13.1000, "lng": 80.2300, "population": 4500, "severity": "Medium", "critical_needs": {"food": 300, "water": 600, "medicine": 80, "medical_supplies": 70, "shelter_kits": 40}},
+    {"id": "Z7", "name": "South-East Delta Zone 7", "lat": 13.0300, "lng": 80.2700, "population": 11000, "severity": "High", "critical_needs": {"food": 700, "water": 1300, "medicine": 280, "medical_supplies": 200, "shelter_kits": 180}},
+    {"id": "Z8", "name": "Suburban Ring Zone 8", "lat": 13.0200, "lng": 80.2100, "population": 7800, "severity": "Low", "critical_needs": {"food": 250, "water": 500, "medicine": 60, "medical_supplies": 40, "shelter_kits": 30}}
+  ],
+  "warehouses": [
+    {"id": "W1", "name": "Central Relief Depot W1", "lat": 13.0750, "lng": 80.2450, "stock": {"food": 5000, "water": 10000, "medicine": 2000, "medical_supplies": 1500, "shelter_kits": 1000}},
+    {"id": "W2", "name": "Port Logistic Hub W2", "lat": 13.0900, "lng": 80.2900, "stock": {"food": 6000, "water": 12000, "medicine": 2500, "medical_supplies": 1800, "shelter_kits": 1200}}
+  ],
+  "hospitals": [
+    {"id": "H1", "name": "City General Hospital H1", "lat": 13.0780, "lng": 80.2650, "capacity": 300, "available_beds": 45, "emergency_capability": true, "incoming_patients": 12},
+    {"id": "H2", "name": "St. Jude Relief Trauma H2", "lat": 13.0450, "lng": 80.2550, "capacity": 200, "available_beds": 20, "emergency_capability": true, "incoming_patients": 18},
+    {"id": "H3", "name": "Metropolitan Health Center H3", "lat": 13.0950, "lng": 80.2750, "capacity": 150, "available_beds": 35, "emergency_capability": false, "incoming_patients": 5},
+    {"id": "H4", "name": "Westside Emergency Clinic H4", "lat": 13.0550, "lng": 80.2150, "capacity": 100, "available_beds": 15, "emergency_capability": true, "incoming_patients": 8}
+  ],
+  "shelters": [
+    {"id": "S1", "name": "Community Stadium Shelter S1", "lat": 13.0720, "lng": 80.2520, "capacity": 1000, "occupancy": 650, "facilities": ["Medical", "Kitchen", "Sanitation"], "accessibility": "Good"},
+    {"id": "S2", "name": "Northern Academy Shelter S2", "lat": 13.0980, "lng": 80.2620, "capacity": 600, "occupancy": 420, "facilities": ["Kitchen", "Sanitation"], "accessibility": "Fair"},
+    {"id": "S3", "name": "Southern Convention Hall S3", "lat": 13.0380, "lng": 80.2620, "capacity": 800, "occupancy": 310, "facilities": ["Medical", "Sanitation"], "accessibility": "Good"},
+    {"id": "S4", "name": "West Public School Shelter S4", "lat": 13.0620, "lng": 80.2220, "capacity": 500, "occupancy": 150, "facilities": ["Sanitation"], "accessibility": "Fair"}
+  ],
+  "vehicles": [
+    {"id": "V1", "name": "Ambulance 01", "type": "ambulance", "capacity": 4, "assigned_warehouse": "W1", "status": "Available"},
+    {"id": "V2", "name": "Ambulance 02", "type": "ambulance", "capacity": 4, "assigned_warehouse": "W1", "status": "Available"},
+    {"id": "V3", "name": "Ambulance 03", "type": "ambulance", "capacity": 4, "assigned_warehouse": "W2", "status": "Available"},
+    {"id": "V4", "name": "Ambulance 04", "type": "ambulance", "capacity": 4, "assigned_warehouse": "W2", "status": "Available"},
+    {"id": "V5", "name": "Relief Truck Heavy 01", "type": "relief truck", "capacity": 2000, "assigned_warehouse": "W1", "status": "Available"},
+    {"id": "V6", "name": "Relief Truck Heavy 02", "type": "relief truck", "capacity": 2000, "assigned_warehouse": "W1", "status": "Available"},
+    {"id": "V7", "name": "Relief Truck Medium 03", "type": "relief truck", "capacity": 1200, "assigned_warehouse": "W2", "status": "Available"},
+    {"id": "V8", "name": "Relief Truck Medium 04", "type": "relief truck", "capacity": 1200, "assigned_warehouse": "W2", "status": "Available"},
+    {"id": "V9", "name": "Rescue Van 01", "type": "rescue vehicle", "capacity": 10, "assigned_warehouse": "W1", "status": "Available"},
+    {"id": "V10", "name": "Rescue Van 02", "type": "rescue vehicle", "capacity": 10, "assigned_warehouse": "W1", "status": "Available"},
+    {"id": "V11", "name": "Rescue Boat-Trailer 03", "type": "rescue vehicle", "capacity": 12, "assigned_warehouse": "W2", "status": "Available"},
+    {"id": "V12", "name": "Rescue Van 04", "type": "rescue vehicle", "capacity": 10, "assigned_warehouse": "W2", "status": "Available"}
+  ],
+  "teams": [
+    {"id": "T1", "name": "Alpha Medical Responders", "type": "Medical", "members": 6, "status": "Ready"},
+    {"id": "T2", "name": "Beta Trauma Squad", "type": "Medical", "members": 5, "status": "Ready"},
+    {"id": "T3", "name": "Gamma Water Extraction Team", "type": "Search & Rescue", "members": 8, "status": "Ready"},
+    {"id": "T4", "name": "Delta Boat Rescue Unit", "type": "Search & Rescue", "members": 8, "status": "Ready"},
+    {"id": "T5", "name": "Epsilon Structural Rescue", "type": "Search & Rescue", "members": 7, "status": "Ready"},
+    {"id": "T6", "name": "Zeta Supply Logistics Crew", "type": "Logistics", "members": 10, "status": "Ready"},
+    {"id": "T7", "name": "Eta Emergency Logistics", "type": "Logistics", "members": 8, "status": "Ready"},
+    {"id": "T8", "name": "Theta Field Sanitation Squad", "type": "Sanitation & Shelter", "members": 6, "status": "Ready"}
+  ],
+  "roads": [
+    {"id": "R1", "source": "W1", "target": "Z1", "distance_km": 4.5, "travel_time_min": 10, "is_blocked": false},
+    {"id": "R2", "source": "W1", "target": "Z3", "distance_km": 2.1, "travel_time_min": 5, "is_blocked": false},
+    {"id": "R3", "source": "W1", "target": "Z5", "distance_km": 5.8, "travel_time_min": 12, "is_blocked": false},
+    {"id": "R4", "source": "W2", "target": "Z2", "distance_km": 3.0, "travel_time_min": 7, "is_blocked": false},
+    {"id": "R5", "source": "W2", "target": "Z6", "distance_km": 7.2, "travel_time_min": 15, "is_blocked": true},
+    {"id": "R6", "source": "Z1", "target": "Z2", "distance_km": 3.2, "travel_time_min": 8, "is_blocked": false},
+    {"id": "R7", "source": "Z2", "target": "Z4", "distance_km": 6.0, "travel_time_min": 14, "is_blocked": false},
+    {"id": "R8", "source": "Z3", "target": "Z4", "distance_km": 3.8, "travel_time_min": 9, "is_blocked": true},
+    {"id": "R9", "source": "Z3", "target": "Z7", "distance_km": 5.5, "travel_time_min": 13, "is_blocked": false},
+    {"id": "R10", "source": "Z4", "target": "Z7", "distance_km": 4.1, "travel_time_min": 10, "is_blocked": false},
+    {"id": "R11", "source": "Z5", "target": "Z8", "distance_km": 4.8, "travel_time_min": 11, "is_blocked": false},
+    {"id": "R12", "source": "Z6", "target": "Z1", "distance_km": 5.0, "travel_time_min": 11, "is_blocked": false},
+    {"id": "R13", "source": "Z7", "target": "Z8", "distance_km": 6.5, "travel_time_min": 15, "is_blocked": false},
+    {"id": "R14", "source": "W1", "target": "H1", "distance_km": 2.5, "travel_time_min": 6, "is_blocked": false},
+    {"id": "R15", "source": "Z4", "target": "H2", "distance_km": 1.2, "travel_time_min": 3, "is_blocked": false},
+    {"id": "R16", "source": "Z1", "target": "S2", "distance_km": 2.0, "travel_time_min": 5, "is_blocked": false},
+    {"id": "R17", "source": "Z3", "target": "S1", "distance_km": 1.5, "travel_time_min": 4, "is_blocked": false}
+  ]
+}

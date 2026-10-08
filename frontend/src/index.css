@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased selection:bg-rose-500 selection:text-white;
+  }
+}
+
+.leaflet-container {
+  background-color: #0f172a !important;
+}
